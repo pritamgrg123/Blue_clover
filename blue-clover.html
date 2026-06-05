@@ -1,0 +1,59 @@
+
+
+<div style="background-color: #dadde2; text-align: center; width: 1330px; min-height: 617px;">
+  <div>
+    <style>
+    @keyframes pulse-animation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .web-name {
+      color: #1877f2;
+      padding: 20px;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: Chiller;
+      margin-bottom: 20px;
+      animation: pulse-animation 2s infinite;
+    }
+    </style>
+    <h1 class="web-name">☘ Blue Clover ☘</h1>
+
+
+  <div style="background-color: white; padding: 15px; margin-bottom: 30px; font-family: Arial; margin-top: -35px; display: Inline-block; width: 450px; border-radius: 12px; box-sizing: border-box; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); text-align: left;">
+    <p style="color: black; font-size: 16px; font-weight: bold; margin-left: 3px; margin-bottom: 10px;">Full Name</p>
+    <input
+    type="text" id="userName" placeholder="Enter Your Full Name"
+    style="background-color: white; border: 1px solid gray; width: 400px; color: black; padding: 15px; margin-bottom: 15px; font-size: 15px; border-radius: 10px; outline: none; box-sizing: border-box;"
+    onfocus="this.style.borderColor='#1877f2'; this.style.boxShadow='0 0 5px rgba(24,119,242,0.5)';"
+    onblur="this.style.borderColor='gray'; this.style.boxShadow='none';">
+    
+    <p style="color: black; font-size: 16px; font-weight: bold; margin-left: 3px; margin-bottom: 10px;">DOB</p>
+    <input
+    type="text" id="userDob" placeholder="DD / MM / YYYY"
+    style="background-color: white; border: 1px solid gray; width: 400px; color: black; padding: 15px; font-size: 15px; border-radius: 10px; outline: none; box-sizing: border-box;"
+    onfocus="this.style.borderColor='#1877f2'; this.style.boxShadow='0 0 5px rgba(24,119,242,0.5)';"
+    onblur="this.style.borderColor='gray'; this.style.boxShadow='none';">
+
+
+    <button id="continueBtn" style="background-color: #00c6ff; border: none; font-weight: bold; width: 400px; color: white; border-radius: 50px; font-size: 17px; margin-top: 25px; cursor: pointer; padding: 12px;"
+    onmouseover="this.style.backgroundColor='#1877f2'; this.style.transform='scale(1.01)'"
+    onmouseout="this.style.backgroundColor='#00c6ff'; this.style.transform='scale(1)'"
+    >Continue</button>
+
+    <script>
+      document.getElementById("continueBtn").onclick = function() {
+
+        var name = document.getElementById("userName").value;
+        var dob = document.getElementById("userDob").value;
+
+        if (name == "Roshika Aryal" && dob == "17/07/2011") {
+          open('https://www.google.com/', '_blank');
+        } else {
+          alert("Incorrect name or age or password❎");
+        }
+      };
+    </script>
+
+    <p style="font-size: 11px; color: red; margin-top: 10px; text-align: center;">Name ra DOB varera Continue ma click gara ani hera magic💫</p>
